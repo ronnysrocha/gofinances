@@ -49,7 +49,7 @@ type NavigationProps = {
 export function Register() {
   const [transactionType, setTransactionType] = useState('');
   const [categoryModalOpen, setCategoryModalOpen] = useState(false);
-  const dataKey = '@gofinances:transactions';
+  
   const [category, setCategory] = useState({
     key: 'category',
     name: 'Categoria'
@@ -95,6 +95,7 @@ export function Register() {
     }
 
     try { 
+      const dataKey = '@gofinances:transactions';
       const data = await AsyncStorage.getItem(dataKey);
       const currentData = data ? JSON.parse(data) : [];
       
