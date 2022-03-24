@@ -4,9 +4,7 @@ import { Feather } from '@expo/vector-icons';
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 import { getBottomSpace, getStatusBarHeight } from 'react-native-iphone-x-helper';
 import { BorderlessButton, GestureHandlerRootView } from 'react-native-gesture-handler'
-
-
-import { DataListProps } from '.';
+import { DataListProps } from ".";
 
 export const Container = styled(GestureHandlerRootView)`
     flex: 1;
